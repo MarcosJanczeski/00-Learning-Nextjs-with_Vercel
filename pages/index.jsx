@@ -1,4 +1,6 @@
+import Link from 'next/link';
 import { useState } from 'react';
+
 function Header({ title }) {
   return <h1>{title ? title : 'Default title'}</h1>;
 }
@@ -20,8 +22,8 @@ export default function HomePage() {
           <li key={name}>{name}</li>
         ))}
       </ul>
-
-      <button onClick={handleClick}>Like ({likes})</button>
+      <button onClick={handleClick}>Like ({likes})</button><br />
+      <Link href={'/posts'}>POSTS</Link>
     </div>
   );
 }
