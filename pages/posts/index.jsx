@@ -1,7 +1,8 @@
 import Link from "next/link"
 import posts from "./posts"
+import Layout from "../../components/layout"
 export default function Posts() {
-  return <>
+  return <Layout>
     <h1>POSTS EM DESTAQUE</h1>
     <ul>
       {posts.map((post, index) => <li key={index}>
@@ -10,6 +11,5 @@ export default function Posts() {
         </h2>
       </li>)}
     </ul>
-    <Link href='/'>BACK TO HOME</Link>
-  </>
+  </Layout>
 }

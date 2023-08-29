@@ -9,7 +9,6 @@ export default function Post() {
     <h3>{post.title}</h3>
     <p>{post.content}</p>
     <small>{post.author}</small><br /><br />
-    <Link href='/posts'>BACK TO POSTS</Link><br /><br />
-    <Link href='/'>BACK TO HOME</Link>
+    <Link href='/posts'>← Back to posts</Link><br /><br />
   </Layout>
 }
