@@ -1,5 +1,5 @@
 import Link from "next/link"
-import posts from "./posts"
+import posts from "../../lib/posts"
 import Layout from "../../components/layout"
 export default function Posts() {
   return <Layout>
